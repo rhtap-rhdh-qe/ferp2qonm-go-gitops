@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ferp2qonm-go-gitops
+  description: This is GitOps manifest for ferp2qonm-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=ferp2qonm-go
+    backstage.io/kubernetes-id: ferp2qonm-go 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: ferp2qonm-go   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:ferp2qonm-go

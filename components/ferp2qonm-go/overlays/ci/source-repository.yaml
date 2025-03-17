@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ferp2qonm-go-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/ferp2qonm-go
